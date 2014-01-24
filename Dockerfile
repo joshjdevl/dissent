@@ -1,5 +1,5 @@
 from ubuntu:precise
-MAINTAINER joshjoyrmsa < joshjoyrmsa [at] gmail {dot} com>
+MAINTAINER joshjdevl < joshjdevl [at] gmail {dot} com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
