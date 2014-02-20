@@ -23,4 +23,9 @@ ADD dissent.pro /Dissent/dissent.pro
 RUN	cd /compile/cryptopp make install
 RUN 	cd /Dissent && qmake application.pro 
 RUN     cd /compile/cryptopp && make install && cd /Dissent && make -j 5
-
+RUN	apt-get install -y vim
+RUN 	apt-get -y install wget
+RUN 	apt-get install -y openssh-server
+RUN 	mkdir /var/run/sshd
+RUN 	/usr/sbin/sshd
+RUN 	echo "root:josh" | chpasswd
