@@ -29,3 +29,5 @@ RUN 	apt-get install -y openssh-server
 RUN 	mkdir /var/run/sshd
 RUN 	/usr/sbin/sshd
 RUN 	echo "root:josh" | chpasswd
+RUN 	cp /Dissent/src/Web/Content/* /Dissent/
+ADD	server.conf /Dissent/conf/server.conf
